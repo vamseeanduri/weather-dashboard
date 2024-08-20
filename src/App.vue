@@ -1,10 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <WeatherSearch />
   <router-view/>
 </template>
+
+
+<script>
+import WeatherSearch from './components/WeatherSearch.vue';
+
+export default {
+  components: {
+    WeatherSearch,
+  },
+};
+</script>
 
 <style>
 #app {
